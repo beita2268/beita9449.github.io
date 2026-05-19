@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GamePath 游戏攻略站</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="page-shell">
+    <header class="hero">
+      <p class="eyebrow">MVP 版本</p>
+      <h1>GamePath 游戏攻略站</h1>
+      <p class="hero-text">
+        一个先能上线、再慢慢扩展的游戏攻略网站。现在你可以先展示攻略列表、查看详情，再逐步加入更多游戏和内容。
+      </p>
+      <div class="hero-actions">
+        <a href="#guide-list" class="button button-primary">查看攻略</a>
+        <a href="#how-to-use" class="button button-secondary">站点说明</a>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="panel panel-list" id="guide-list">
+        <div class="section-heading">
+          <div>
+            <p class="section-kicker">攻略目录</p>
+            <h2>先放 3 篇示例攻略</h2>
+          </div>
+          <label class="search-box">
+            <span>搜索</span>
+            <input id="searchInput" type="text" placeholder="输入游戏名或关键词">
+          </label>
+        </div>
+
+        <div id="guideCards" class="guide-cards"></div>
+      </section>
+
+      <section class="panel panel-detail" id="guide-detail">
+        <p class="section-kicker">攻略详情</p>
+        <div id="guideDetail"></div>
+      </section>
+    </main>
+
+    <section class="panel tips" id="how-to-use">
+      <p class="section-kicker">这个版本能做什么</p>
+      <h2>先做到“别人能打开并看到内容”</h2>
+      <ul>
+        <li>可以展示你的游戏攻略列表</li>
+        <li>可以点开看每篇攻略重点</li>
+        <li>可以按关键词搜索</li>
+        <li>可以直接部署到 GitHub Pages</li>
+      </ul>
+      <p>
+        后面如果你愿意，我们再继续加：分类页、图片、视频、评论区、投稿后台。
+      </p>
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
